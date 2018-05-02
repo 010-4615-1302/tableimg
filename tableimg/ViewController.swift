@@ -46,7 +46,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addAction(Action)
         alert.addAction(noAction)
         self.present(alert, animated: true, completion: nil)
+        
+        
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {return 100.0}
     }
 
 
